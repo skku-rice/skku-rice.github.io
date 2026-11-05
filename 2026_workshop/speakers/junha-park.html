@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-bg="white" data-line="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,7 @@
 <meta property="og:description" content="Hybrid Tensor-Network and Cluster-Correlation Expansion Approach to Decoherence in Multi-Qubit Spin Registers">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23141414' stroke-width='1.6'%3E%3Ccircle cx='12' cy='12' r='9.5'/%3E%3Cellipse cx='12' cy='12' rx='9.5' ry='3'/%3E%3Cline x1='12' y1='12' x2='17.5' y2='6.5'/%3E%3C/g%3E%3Ccircle cx='17.5' cy='6.5' r='2.2' fill='%23d7261e'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <div class="draft">Draft for internal review. The title, program, and speaker list are tentative.</div>
@@ -18,9 +19,8 @@
     <a class="wordmark" href="../index.html"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4">
 <circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="9.5" ry="3"/><line x1="12" y1="12" x2="17.5" y2="6.5"/></g>
 <circle cx="17.5" cy="6.5" r="2" class="mark-dot"/></svg><span>SKKU⁠–⁠Rice Workshop 2026</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu">
-    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
-    <nav class="nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../program.html">Program</a></li><li><a href="../speakers.html">Speakers</a></li><li><a href="../posters.html" aria-current=page>Posters</a></li><li><a href="../abstracts.html">Abstracts</a></li><li><a href="../organizers.html">Organizers</a></li><li><a href="../venue.html">Venue</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
+    <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../program.html">Program</a></li><li><a href="../speakers.html">Speakers</a></li><li><a href="../posters.html" aria-current=page>Posters</a></li><li><a href="../abstracts.html">Abstracts</a></li><li><a href="../organizers.html">Organizers</a></li><li><a href="../venue.html">Venue</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
   </div>
 </header>
 <main>
@@ -30,7 +30,7 @@
   <h1 class="talk-h1">Hybrid Tensor-Network and Cluster-Correlation Expansion Approach to Decoherence in Multi-Qubit Spin Registers</h1>
   <div class="presenter"><div>
     <p class="row-name">Junha Park</p>
-    <p class="row-meta">Graduate Student, Department of Quantum Information Engineering, Sungkyunkwan University<br><span class="nw">Advisor: Prof. Hosung Seo</span></p>
+    <p class="row-meta">Graduate Student, Department of Quantum Information Engineering, <span class="uni-name uni-skku">Sungkyunkwan University</span><br><span class="nw">Advisor: Prof. Hosung Seo</span></p>
     <p class="links"></p></div></div>
   <p class="when"><a href="../program.html#poster">Poster Session and Reception</a> · Day 2 · Dec 4 · 1:45–3:15 pm</p>
 </div></header>
@@ -39,7 +39,7 @@
 <ul class="affils"><li><sup>1</sup>SKKU Advanced Institute of Nanotechnology (SAINT), Sungkyunkwan University, Suwon, Korea</li><li><sup>2</sup>Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL, USA</li><li><sup>3</sup>Center for Quantum Information, Korea Institute of Science and Technology, Seoul, Korea</li><li><sup>4</sup>Department of Quantum Information Engineering, Sungkyunkwan University, Suwon, Korea</li><li><sup>5</sup>Division of Nano and Information Technology, KIST School, Korea University of Science and Technology, Seoul, Korea</li></ul>
 <div class="abstract"><p>Scaling solid-state spin registers to many qubits is important for quantum computation, communication, and sensing, and requires a quantitative understanding of multi-qubit decoherence in complex spin environments. While first-principles approaches such as the cluster-correlation expansion (CCE) and its generalized form (gCCE) have successfully described single-qubit decoherence, their application to multi-qubit dynamics remains limited by the exponential growth of the Hilbert space. Tensor network (TN) methods can mitigate this growth, but long-range interactions in realistic spin baths limit their efficiency. Here, we introduce TN-gCCE, in which the cluster expansion factorizes the bath contribution into cluster correlations, while TNs compress the quantum state of each cluster into a matrix product state according to its entanglement structure. We benchmark TN-gCCE on nitrogen-vacancy (NV) registers in a <sup>13</sup>C nuclear-spin bath, a canonical model system. For up to six NV centers, TN-gCCE shows excellent agreement with gCCE under Ramsey and Hahn-echo sequences. It also reduces the computational cost of six-NV Ramsey simulations nearly 20-fold. These results establish TN-gCCE as a scalable tool for predicting decoherence in large spin registers.</p></div>
 <figure><img src="../assets/figures/park_fig1.png" alt="" loading="lazy"><figcaption>Fig. 1. Schematics of the NV register and the TN-gCCE method. (a) Eight-NV register in the presence of a <sup>13</sup>C nuclear spin bath. The red and brown spheres indicate the NV spins and <sup>13</sup>C nuclear spins, respectively. (b) Clustered bath spins from zeroth to third order of the gCCE method. The red and blue arrows indicate the NV centers and bath spins, respectively. (c) Workflow of the TN-gCCE method. The red box highlights the cluster-dynamics calculation performed using the TN formalism. The light orange boxes highlight the ED-based TDVP solver and the backward-reference evolution scheme as the more computationally efficient approaches identified in this study.</figcaption></figure></article>
-  <nav class="pager"><a href="yonghyun-kwon.html">← Yonghyun Kwon</a><a href="../posters.html">All posters</a><a href="seungcheon-shin.html">Seungcheon Shin →</a></nav>
+  <nav class="pager" aria-label="Previous and next"><a class="pg-prev" href="yonghyun-kwon.html"><span class="pg-name">← Yonghyun Kwon</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a><span class="pg-mid"><span class="pg-count">Posters · 2 of 13</span><a href="../posters.html">All posters</a></span><a class="pg-next" href="seungcheon-shin.html"><span class="pg-name">Seungcheon Shin →</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a></nav>
 </div>
 </main>
 <footer class="footer">

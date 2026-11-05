@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-bg="white" data-line="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,7 @@
 <meta property="og:description" content="Predicting Quantum Decoherence in Solid-State Spin Qubits: From Atomistic Defects to Quantum Devices">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23141414' stroke-width='1.6'%3E%3Ccircle cx='12' cy='12' r='9.5'/%3E%3Cellipse cx='12' cy='12' rx='9.5' ry='3'/%3E%3Cline x1='12' y1='12' x2='17.5' y2='6.5'/%3E%3C/g%3E%3Ccircle cx='17.5' cy='6.5' r='2.2' fill='%23d7261e'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <div class="draft">Draft for internal review. The title, program, and speaker list are tentative.</div>
@@ -18,9 +19,8 @@
     <a class="wordmark" href="../index.html"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4">
 <circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="9.5" ry="3"/><line x1="12" y1="12" x2="17.5" y2="6.5"/></g>
 <circle cx="17.5" cy="6.5" r="2" class="mark-dot"/></svg><span>SKKU⁠–⁠Rice Workshop 2026</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu">
-    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
-    <nav class="nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../program.html">Program</a></li><li><a href="../speakers.html" aria-current=page>Speakers</a></li><li><a href="../posters.html">Posters</a></li><li><a href="../abstracts.html">Abstracts</a></li><li><a href="../organizers.html">Organizers</a></li><li><a href="../venue.html">Venue</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
+    <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../program.html">Program</a></li><li><a href="../speakers.html" aria-current=page>Speakers</a></li><li><a href="../posters.html">Posters</a></li><li><a href="../abstracts.html">Abstracts</a></li><li><a href="../organizers.html">Organizers</a></li><li><a href="../venue.html">Venue</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
   </div>
 </header>
 <main>
@@ -30,7 +30,7 @@
   <h1 class="talk-h1">Predicting Quantum Decoherence in Solid-State Spin Qubits: From Atomistic Defects to Quantum Devices</h1>
   <div class="presenter"><div>
     <p class="row-name">Hosung Seo</p>
-    <p class="row-meta">Department of Quantum Information Engineering, Sungkyunkwan University</p>
+    <p class="row-meta">Department of Quantum Information Engineering, <span class="uni-name uni-skku">Sungkyunkwan University</span></p>
     <p class="links"></p></div></div>
   <p class="when">Schedule to be announced</p>
 </div></header>
@@ -42,7 +42,7 @@
 <p>In this talk, I will present a predictive framework for decoherence of NV ensembles in diamond (Fig. 1) [1]. Instead of approximating real defect populations as a single homogeneous bath, we build defect-resolved spin Hamiltonians for nitrogen-, vacancy-, and hydrogen-related defects. We find that coherence depends not only on defect density but also on defect identity and bath composition: mixed defect populations can suppress or enhance decoherence. Our calculations reproduce magnetic-field-dependent Hahn-echo measurements across defect concentrations and identify vacancy-related defects as critical contributors beyond the conventional nitrogen (P1) bath. I will close by discussing opportunities for SKKU⁠–⁠Rice collaboration on qubit materials, defect engineering, and quantum sensing.</p></div>
 <figure><img src="../assets/figures/seo_fig1.png" alt="" loading="lazy"><figcaption>Fig. 1. Paramagnetic defects in diamond and central spin model. (a) Schematic of the negatively charged nitrogen-vacancy center in diamond subject to a Hahn-echo pulse sequence. (b) Representative paramagnetic defects considered in this study.</figcaption></figure>
 <ol class="refs"><li>H. Park, H. Jeong, H. Kim, C. Findler, F. Jelezko, S. Oh, J. Lee, G. Galli, H. Seo, <i>npj Comp. Mater.</i>, in press (2026).</li></ol></article>
-  <nav class="pager"><a href="guido-pagano.html">← Guido Pagano</a><a href="../speakers.html">All speakers</a><a href="sang-hee-shin.html">Sang-Hee Shin →</a></nav>
+  <nav class="pager" aria-label="Previous and next"><a class="pg-prev" href="youngkuk-kim.html"><span class="pg-name">← Youngkuk Kim</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a><span class="pg-mid"><span class="pg-count">Speakers · 5 of 15</span><a href="../speakers.html">All speakers</a></span><a class="pg-next" href="sang-hee-shin.html"><span class="pg-name">Sang-Hee Shin →</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a></nav>
 </div>
 </main>
 <footer class="footer">
