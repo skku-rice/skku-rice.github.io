@@ -1,6 +1,6 @@
-# skku-rice.github.io
+# skkurice.github.io
 
-Website of SKKU–Rice collaboration events, served by GitHub Pages at https://skku-rice.github.io/
+Website of SKKU–Rice collaboration events, served by GitHub Pages at https://skkurice.github.io/
 
 | Path | Content |
 |---|---|
