@@ -70,7 +70,8 @@ h3 { font-size: 1.1rem; letter-spacing: -.01em; }
 p { margin: 0 0 1em; }
 ul, ol, dl { margin: 0; padding: 0; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
-.narrow { max-width: 920px; }
+.narrow { max-width: var(--wrap); }  /* narrow pages share the left edge of the header and footer */
+.narrow > * { max-width: 920px; }
 .muted { color: var(--muted); }
 .tba { color: var(--muted); font-style: italic; }
 .label { font: 500 .8rem/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 .9em; }
@@ -116,7 +117,7 @@ p, li, dd, figcaption, .lead { text-wrap: pretty; }
 /* photo hero: SKKU left, Rice right */
 .hero-photos { display: block; border-bottom: 0; background: #111; }
 .hero-photos::before { display: none; }
-.hero-photo { position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; background-position: center 88%; }  /* both photos are 4:3 with the ground at 90 % of the height, so the ground lines meet */
+.hero-photo { position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; background-position: center 72%; }  /* both photos are 4:3 with the ground at 80 % of the height, so the ground lines meet */
 .hero-left { left: 0; }
 .hero-right { right: 0; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 0) 38%, rgba(10, 10, 12, .35) 62%, rgba(10, 10, 12, .78) 100%); }
