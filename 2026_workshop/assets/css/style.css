@@ -135,7 +135,7 @@ p, li, dd, figcaption, .lead { text-wrap: pretty; }
 .hero-photos .hero-links a:first-child { background: #fff; color: #141414; border-color: #fff; }
 .hero-photos .hero-links a:hover { background: rgba(255, 255, 255, .14); border-color: #fff; }
 .hero-photos .hero-links a:first-child:hover { background: #eeeeee; border-color: #eeeeee; color: #141414; }
-.photo-credit { margin: 8px 0 0; text-align: right; font-size: .78rem; color: var(--muted); }
+.photo-credit { flex-basis: 100%; margin: 6px 0 0; text-align: left; font-size: .78rem; color: var(--muted); }
 .photo-credit a { color: var(--muted); }
 
 /* university identifiers (palette D) */
