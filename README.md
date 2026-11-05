@@ -5,7 +5,7 @@ Website of SKKU–Rice collaboration events, served by GitHub Pages at https://s
 | Path | Content |
 |---|---|
 | `index.html` | Hub page listing all events (edit by hand) |
-| `2026_workshop/` | Rice–SKKU Quantum Collaboration Workshop, Dec 3–4, 2026 (generated, do not edit here) |
+| `2026_workshop/` | SKKU–Rice Quantum Collaboration Workshop, Dec 3–4, 2026 (generated, do not edit here) |
 
 The workshop folder is generated from the source in `~/1_proj/exchange_site` (`python3 build.py`) and copied here by `tools/deploy_github.sh` in that folder.
 
