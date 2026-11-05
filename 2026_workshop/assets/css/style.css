@@ -343,10 +343,10 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
   .hero-links { gap: 8px; }
 }
 
-/* |SKKU> (x) |Rice> wordmark */
-.wordmark { gap: .7em; flex-wrap: wrap; row-gap: 2px; }
-.ket-logo { display: inline-flex; align-items: center; white-space: nowrap; }
-.ket { display: inline-flex; align-items: center; font: 700 1.02em/1 var(--mono); letter-spacing: -.02em; }
-.ket .ra { width: .36em; height: 1.08em; margin-left: .06em; }
-.ot { width: .82em; height: .82em; margin: 0 .38em; color: var(--muted); }
+/* |SKKU> (x) |Rice> wordmark: text on one baseline, drawn symbols aligned to the text */
+.wordmark { gap: .55em; flex-wrap: wrap; row-gap: 2px; align-items: baseline; }
+.ket-logo { display: inline; white-space: nowrap; }
+.ket { font: 700 1em/1 var(--mono); letter-spacing: -.02em; }
+.ket .ra { display: inline-block; width: .36em; height: 1.05em; margin-left: .04em; vertical-align: -.2em; }
+.ot { display: inline-block; width: .78em; height: .78em; margin: 0 .34em; vertical-align: -.1em; color: var(--muted); }
 .wm-rest { font-weight: 600; color: var(--ink); white-space: nowrap; }
