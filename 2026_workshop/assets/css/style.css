@@ -120,7 +120,7 @@ p, li, dd, figcaption, .lead { text-wrap: pretty; }
 .hero-photo { position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; background-position: center 88%; }  /* both photos are 4:3 with the ground at 90 % of the height, so the ground lines meet */
 .hero-left { left: 0; }
 .hero-right { right: 0; }
-.hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 0) 50%, rgba(10, 10, 12, .22) 68%, rgba(10, 10, 12, .58) 100%); }
+.hero-shade { position: absolute; inset: 0; background: radial-gradient(ellipse 56% 46% at 50% 72%, rgba(10, 10, 12, .52), rgba(10, 10, 12, 0) 74%), linear-gradient(180deg, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 0) 55%, rgba(10, 10, 12, .38) 100%); }  /* dark only behind the text, photos stay bright */
 .hero-cap { position: absolute; top: 18px; max-width: 70%; font: 400 .72rem/1.4 var(--mono); color: #fff; background: rgba(0, 0, 0, .45); padding: 5px 9px; z-index: 2; }
 .hero-left .hero-cap { left: 18px; }
 .hero-right .hero-cap { right: 18px; text-align: right; }
