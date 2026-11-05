@@ -350,4 +350,4 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 .ket .ra { display: inline-block; width: .36em; height: 1.05em; margin-left: .04em; vertical-align: -.2em; }
 .ot { display: inline-block; width: .78em; height: .78em; margin: 0 .34em; vertical-align: -.1em; color: var(--muted); }
 .wm-rest { font-weight: 600; color: var(--ink); white-space: nowrap; }
-@media (max-width: 420px) { .wordmark { flex-wrap: wrap; } }
+@media (max-width: 420px) { .wordmark { flex-direction: column; align-items: center; gap: 2px; text-align: center; } }
