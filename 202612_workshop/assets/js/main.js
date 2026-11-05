@@ -5,7 +5,7 @@
   var text = document.getElementById("f-text");
   var uni = document.getElementById("f-uni");
   var count = document.getElementById("f-count");
-  var cards = Array.prototype.slice.call(grid.querySelectorAll(".speaker-card"));
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".row-link"));
   function apply() {
     var q = text.value.trim().toLowerCase(), shown = 0;
     cards.forEach(function (c) {
