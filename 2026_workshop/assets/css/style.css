@@ -116,7 +116,7 @@ p, li, dd, figcaption, .lead { text-wrap: pretty; }
 /* photo hero: SKKU left, Rice right */
 .hero-photos { display: block; border-bottom: 0; background: #111; }
 .hero-photos::before { display: none; }
-.hero-photo { position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; background-position: center; }
+.hero-photo { position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; background-position: center 88%; }  /* both photos are 4:3 with the ground at 90 % of the height, so the ground lines meet */
 .hero-left { left: 0; }
 .hero-right { right: 0; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 0) 38%, rgba(10, 10, 12, .35) 62%, rgba(10, 10, 12, .78) 100%); }
@@ -344,9 +344,10 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 }
 
 /* |SKKU> (x) |Rice> wordmark: text on one baseline, drawn symbols aligned to the text */
-.wordmark { gap: .55em; flex-wrap: wrap; row-gap: 2px; align-items: baseline; }
+.wordmark { gap: .55em; flex-wrap: nowrap; row-gap: 2px; align-items: baseline; }
 .ket-logo { display: inline; white-space: nowrap; }
 .ket { font: 700 1em/1 var(--mono); letter-spacing: -.02em; }
 .ket .ra { display: inline-block; width: .36em; height: 1.05em; margin-left: .04em; vertical-align: -.2em; }
 .ot { display: inline-block; width: .78em; height: .78em; margin: 0 .34em; vertical-align: -.1em; color: var(--muted); }
 .wm-rest { font-weight: 600; color: var(--ink); white-space: nowrap; }
+@media (max-width: 420px) { .wordmark { flex-wrap: wrap; } }
