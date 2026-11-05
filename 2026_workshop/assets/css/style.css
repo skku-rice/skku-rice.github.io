@@ -4,6 +4,7 @@
 @font-face { font-family: "Inter"; src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
 @font-face { font-family: "IBM Plex Mono"; src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "IBM Plex Mono"; src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("../fonts/ibm-plex-mono-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
 
 /* Version A: light */
 :root {
@@ -341,3 +342,11 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
   .row > div { min-width: 0; }
   .hero-links { gap: 8px; }
 }
+
+/* |SKKU> (x) |Rice> wordmark */
+.wordmark { gap: .7em; flex-wrap: wrap; row-gap: 2px; }
+.ket-logo { display: inline-flex; align-items: center; white-space: nowrap; }
+.ket { display: inline-flex; align-items: center; font: 700 1.02em/1 var(--mono); letter-spacing: -.02em; }
+.ket .ra { width: .36em; height: 1.08em; margin-left: .06em; }
+.ot { width: .82em; height: .82em; margin: 0 .38em; color: var(--muted); }
+.wm-rest { font-weight: 600; color: var(--ink); white-space: nowrap; }
